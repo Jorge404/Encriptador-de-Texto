@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+    <h1 class="logo"><img src="src/img/Vector.svg" alt="logo-empresa"></h1>
+    </header>
+    <main>
+        <div class="texto-usuario">
+                <textarea  placeholder="Ingresa texto aqui" name="Texto-a-encriptar" id="texto" cols="60" rows="20"></textarea>
+                <label id="leyenda2"><img src="src/img/imagen-leyenda2.png" alt=""> Solo letras minúsculas y sin acentos</label>
+                <div class="botton-encriptar">
+                <button id="encriptar">Encriptar</button>
+            </div>
+                <div class="botton-desencriptar">
+                    <button id="desencriptar">Desencriptar</button>
+                </div>
+        </div>
+        <aside>
+            <div class="historial-mensajes">
+                <textarea placeholder="Ningùn mensaje fue encontrado" type="text" name="historial" id="mensajes-encriptados"></textarea>
+                <img id="img-sin-mensajes" src="src/img/Muñeco.png" alt="imagen-sin-mensajes">
+                <label id="leyenda1">Ingresa el texto que deseas encriptar o desencriptar</label>
+                <div class="caja-boton-copiar">
+                    <button id="boton-copiar">Copiar</button>
+                </div>
+            </div>
+            
+        </aside>
+    </main>
+    <script src="src/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+body{
+    background-repeat: no-repeat;
+    background: url(../img/fondo2.svg);
+    height: 100%;
+}
+main{
+    background-color: rgba(0, 255, 255, 0);
+    width: 99%;
+    height: 100%;
+    position:relative;
+    display: inline-block;
+}
+.logo{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 4rem;
+    margin-top: 20px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.texto-usuario{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 1rem;
+    height: 32rem;
+    padding: 10px;
+    display: inline-block;
+    margin-left: 2rem;
+}
+.texto-usuario textarea{
+    padding: 10px;
+    resize: none;
+    outline: none;
+    border: none;
+}
+.texto-usuario #texto{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    font-size: x-large;
+    background-color: rgba(255, 255, 255, 0.952);
+    display: inline-block;
+    position: relative;
+}
+.texto-usuario #leyenda2{
+    position: absolute;
+    margin: -5rem 5rem;
+
+}
+.texto-usuario img{
+    position: absolute;
+    margin-top: -1px;
+    margin-left: -20px;
+}
+.texto-usuario #texto::placeholder{
+    visibility: visible;
+    font-size: 30px;
+    padding: 10rem ;
+    color: rgba(0, 0, 0, 0.596);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.botton-encriptar{
+    margin-left: 2em;
+    margin-top: -2em;
+    position: absolute;
+    display: inline-block;
+}
+.botton-encriptar #encriptar{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border-style: none;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+#encriptar:hover{
+    background-color: goldenrod;
+    color: black;
+}
+.botton-desencriptar{
+    margin-left: 27em;
+    margin-top: -2em ;
+    display: inline-block;
+    position: absolute;
+    
+}
+.botton-desencriptar #desencriptar{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border-style: none;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+#desencriptar:hover{
+    background-color: goldenrod;
+    color: black;
+}
+
+/*CSS para caja de historial de mensajes encriptados*/
+aside{
+    background-color: rgba(137, 43, 226, 0);
+    position: absolute;
+    margin-top: -43em;
+    margin-left: 65%;
+    padding: 2px;
+
+}
+aside .historial-mensajes{
+    background-color: rgba(33, 204, 147, 0);
+    width: 22em;
+    height: 34em;
+    margin: 4em 0em;
+    display: inline-block;
+}
+.historial-mensajes #mensajes-encriptados{
+    border-radius: 10px;
+    font-size: 18px;
+    width: 100%;
+    height: 34em;
+    margin-top: 10px;
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    background-color: rgb(255, 255, 255);
+    background-position: 25px 50px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.418);
+}
+
+.historial-mensajes #img-sin-mensajes{
+    position: absolute;
+    margin-top: -37rem;
+}
+
+.historial-mensajes label{
+    position: absolute;
+    text-align: center;
+    line-height: 1em;
+    margin-top: -14em;
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 600;
+    color: #495057;
+}
+/*placeholder1*/
+.historial-mensajes #mensajes-encriptados::placeholder{
+    text-align: center;
+    letter-spacing: 0em;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    font-family: Inter;
+    color: #000000;
+    position: absolute;
+    margin: 350px 25px;
+}
+aside .caja-boton-copiar #boton-copiar{
+    background-color: lightblue;
+    position: absolute;
+    border-radius: 1.5em;
+    width: 15rem;
+    height: 3rem;
+    margin-left: 20%;
+    margin-top: -4rem;
+    color: black;
+    font-weight: bold;
+    border-style: none;
+    cursor: pointer;
+    
+}
+aside #boton-copiar:hover{
+    background-color: goldenrod;
+    color: black;
+}
+/* Media Querys*/
+
+@media (max-width: 768px) {
+header {
+    width: 100%;
+    height: 6rem;
+    display: block;
+    position: static;
+    text-align: center;
+}
+
+.texto-usuario{
+    background-color: rgba(255, 255, 255, 0);
+    width: 90%;
+    margin: 0px 30px;
+    display: inline-block;
+}
+
+.texto-usuario #texto{
+    width: 100%;
+    height: 70%;
+    display: block;
+}
+.texto-usuario #leyenda2{
+    position: absolute;
+    margin: -1rem 5rem;
+
+}
+.texto-usuario #texto::placeholder{
+    visibility: visible;
+    font-size: 25px;
+    padding: 5rem ;
+    color: rgba(0, 0, 0, 0.596);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.texto-usuario #encriptar{
+    width: 18rem;
+    height: 4rem;
+    margin-left: 0.5em;
+    margin-top: -1em;
+    display: block;
+    
+}
+.botton-encriptar{
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 2rem;
+}
+.botton-desencriptar{
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 2rem;
+}
+.texto-usuario #desencriptar{
+    background-color: white;
+    border-style: solid;
+    border-color: darkblue;
+    width: 18rem;
+    height: 4rem;
+    margin-left: 0.5em;
+    margin-top: -1em;
+    color: #000000;
+}
+#desencriptar:hover{
+    background-color: goldenrod;
+    border-style: none;
+    color: black;
+}
+aside{
+    margin: 0px 30px;
+    margin-top: 0px;
+    width: 90%;
+    height: 100%;
+}
+aside .historial-mensajes{
+    display: block;
+    width: 100%;
+    height: 70%;
+}
+.historial-mensajes #mensajes-encriptados{
+    width: 100%;
+    height: 100%;
+}
+.historial-mensajes #img-sin-mensajes{
+    width: 15rem;
+    height: 16rem;
+    margin-top: -22em;
+    margin-left: 60%;
+}
+.historial-mensajes label{
+    margin-left: 3rem;
+    margin-top: -10em;
+    font-size: 20px;
+}
+.historial-mensajes #mensajes-encriptados::placeholder{
+    margin: 9rem 2rem;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:cursive;
+}
+
+aside .caja-boton-copiar #boton-copiar{
+    background-color: darkblue;
+    position: absolute;
+    border-radius: 1.5em;
+    width: 80%;
+    height: 3rem;
+    margin-left: 10%;
+    margin-top: -4rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    
+}
+.historial-mensajes #boton-copiar:hover{
+    background-color: goldenrod;
+    border-style: none;
+    color: black;
+}
+
+}
